@@ -1,0 +1,9 @@
+<div class="col s3 teal darken-4 border-right " id="sidebar">
+	<h3 class="light-blue-text text-lighten-5">Gifs-App</h3>
+	<hr class="white-text"/>
+	<div class="collection">
+	  <a *ngFor ="let item of historial" 
+    href="#" (click)="buscar( item )" class="collection-item active">
+      {{ item | titlecase }}</a>
+	</div>
+</div>
